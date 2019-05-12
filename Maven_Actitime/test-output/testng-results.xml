@@ -1,21 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27997" started-at="2019-05-12T20:26:56Z" finished-at="2019-05-12T20:27:24Z">
+  <suite name="Default suite" duration-ms="18133" started-at="2019-05-12T21:18:45Z" finished-at="2019-05-12T21:19:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27997" started-at="2019-05-12T20:26:56Z" finished-at="2019-05-12T20:27:24Z">
-      <class name="CustomerData.POMTest">
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:CustomerData.POMTest@7cf10a6f]" name="loginTest" duration-ms="19365" started-at="2019-05-13T01:56:56Z" finished-at="2019-05-13T01:57:16Z">
+    <test name="Default test" duration-ms="18133" started-at="2019-05-12T21:18:45Z" finished-at="2019-05-12T21:19:03Z">
+      <class name="CustomerData.customerTest">
+        <test-method status="PASS" signature="configBeforeSuite()[pri:0, instance:CustomerData.customerTest@1b0375b3]" name="configBeforeSuite" is-config="true" duration-ms="16" started-at="2019-05-13T02:48:45Z" finished-at="2019-05-13T02:48:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="loginWithoutPasswordTest()[pri:0, instance:CustomerData.POMTest@7cf10a6f]" name="loginWithoutPasswordTest" duration-ms="8587" started-at="2019-05-13T01:57:16Z" finished-at="2019-05-13T01:57:24Z">
+        </test-method> <!-- configBeforeSuite -->
+        <test-method status="PASS" signature="configBC()[pri:0, instance:CustomerData.customerTest@1b0375b3]" name="configBC" is-config="true" duration-ms="5018" started-at="2019-05-13T02:48:45Z" finished-at="2019-05-13T02:48:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithoutPasswordTest -->
-      </class> <!-- CustomerData.POMTest -->
+        </test-method> <!-- configBC -->
+        <test-method status="PASS" signature="configBM()[pri:0, instance:CustomerData.customerTest@1b0375b3]" name="configBM" is-config="true" duration-ms="3009" started-at="2019-05-13T02:48:50Z" finished-at="2019-05-13T02:48:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method status="PASS" signature="createCustometTest()[pri:0, instance:CustomerData.customerTest@1b0375b3]" name="createCustometTest" duration-ms="8327" started-at="2019-05-13T02:48:53Z" finished-at="2019-05-13T02:49:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCustometTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:CustomerData.customerTest@1b0375b3]" name="configAM" is-config="true" duration-ms="99" started-at="2019-05-13T02:49:01Z" finished-at="2019-05-13T02:49:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:CustomerData.customerTest@1b0375b3]" name="configAC" is-config="true" duration-ms="1678" started-at="2019-05-13T02:49:01Z" finished-at="2019-05-13T02:49:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- CustomerData.customerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
