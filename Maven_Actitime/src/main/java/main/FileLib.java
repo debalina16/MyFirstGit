@@ -41,7 +41,7 @@ public String getPropertyKeyValue(String key) throws Throwable {
  * @throws Throwable
  */
 public String getExcelData(String sheetName,int rowNum,int celNum) throws Throwable {
-	FileInputStream fis=new FileInputStream("C:\\Users\\Debalina\\Desktop\\dataexcel.xlsx");
+	FileInputStream fis=new FileInputStream("C:\\Users\\Debalina\\git\\MyFirstGit\\Maven_Actitime\\src\\test\\resources\\Tools.xlsx");
 	Workbook wb = WorkbookFactory.create(fis);
 	//Workbook wb=WorkbookFactory.create(fis);
 	Sheet sh=wb.getSheet(sheetName);
@@ -59,13 +59,13 @@ public String getExcelData(String sheetName,int rowNum,int celNum) throws Throwa
  * @throws Throwable
  */
 public void setExcelData(String sheetName,int rowNum,int celNum,String data) throws Throwable {
-	FileInputStream fis=new FileInputStream("./dataexcel.xlsx");
+	FileInputStream fis=new FileInputStream("C:\\Users\\Debalina\\git\\MyFirstGit\\Maven_Actitime\\src\\test\\resources\\Tools.xlsx");
 	Workbook wb=WorkbookFactory.create(fis);
 	Sheet sh=wb.getSheet(sheetName);
 	Row rw=sh.getRow(rowNum);
 	Cell cell=rw.createCell(celNum);
 	cell.setCellValue(data);
-	FileOutputStream fos=new FileOutputStream("./dataexcel.xlsx");
+	FileOutputStream fos=new FileOutputStream("C:\\Users\\Debalina\\git\\MyFirstGit\\Maven_Actitime\\src\\test\\resources\\Tools.xlsx");
 	wb.write(fos);
 	wb.close();
  }
