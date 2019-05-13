@@ -23,7 +23,7 @@ import object_Repository.Login;
  */
 public class BaseClassLib {
 	public static WebDriver driver;
-	FileLib flib = new FileLib();
+	public static FileLib flib = new FileLib();
 	WebdriverCommonLib webdri = new WebdriverCommonLib();
 
 	@BeforeSuite

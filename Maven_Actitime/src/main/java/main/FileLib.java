@@ -40,9 +40,10 @@ public String getPropertyKeyValue(String key) throws Throwable {
  * @return
  * @throws Throwable
  */
-public static String getExcelData(String sheetName,int rowNum,int celNum) throws Throwable {
-	FileInputStream fis=new FileInputStream("E:\\Java\\WebDriverApplication\\Data\\Tools.xlsx");
-	Workbook wb=WorkbookFactory.create(fis);
+public String getExcelData(String sheetName,int rowNum,int celNum) throws Throwable {
+	FileInputStream fis=new FileInputStream("C:\\Users\\Debalina\\Desktop\\dataexcel.xlsx");
+	Workbook wb = WorkbookFactory.create(fis);
+	//Workbook wb=WorkbookFactory.create(fis);
 	Sheet sh=wb.getSheet(sheetName);
 	Row rw=sh.getRow(rowNum);
 	String data=rw.getCell(celNum).getStringCellValue();
@@ -58,13 +59,13 @@ public static String getExcelData(String sheetName,int rowNum,int celNum) throws
  * @throws Throwable
  */
 public void setExcelData(String sheetName,int rowNum,int celNum,String data) throws Throwable {
-	FileInputStream fis=new FileInputStream("E:\\Java\\WebDriverApplication\\Data\\Tools.xlsx");
+	FileInputStream fis=new FileInputStream("./dataexcel.xlsx");
 	Workbook wb=WorkbookFactory.create(fis);
 	Sheet sh=wb.getSheet(sheetName);
 	Row rw=sh.getRow(rowNum);
 	Cell cell=rw.createCell(celNum);
 	cell.setCellValue(data);
-	FileOutputStream fos=new FileOutputStream("E:\\Java\\WebDriverApplication\\Data\\Tools.xlsx");
+	FileOutputStream fos=new FileOutputStream("./dataexcel.xlsx");
 	wb.write(fos);
 	wb.close();
  }
